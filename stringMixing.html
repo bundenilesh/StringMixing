@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+			function addition(str1,str2){
+				var i=0,str3="";
+			
+			while (i < str1.length && i < str2.length){
+				str3 += str1[i] + str2[i]; 
+				i++;
+			}
+			while (i < str1.length ){
+				str3 += str1[i]; 
+				i++;
+			}
+			while (i < str2.length){
+				str3 += str2[i]; 
+				i++;
+			}
+        
+				alert(str3);
+			}
+		</script>
+	</head>
+		<body>
+		First string :<input type="text" id="str1" /><br/><br/>
+		Second string :<input type="text" id="str2" /><br/><br/>
+		<input type="button" onClick="addition(getElementById('str1').value,getElementById('str2').value)" value="Press"/>
+		</body>
+</html>
